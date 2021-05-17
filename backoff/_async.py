@@ -108,7 +108,7 @@ def retry_exception(target, wait_gen, exception,
                     wait_gen_kwargs):
     on_success = _ensure_coroutines(on_success)
     on_backoff = _ensure_coroutines(on_backoff)
-    on_giveup = _ensure_coroutines(on_giveup)
+    # on_giveup = _ensure_coroutines(on_giveup)
     giveup = _ensure_coroutine(giveup)
 
     # Easy to implement, please report if you need this.
