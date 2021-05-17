@@ -183,7 +183,7 @@ def on_exception(wait_gen,
 
         return retry(target, wait_gen, exception,
                      max_tries, max_time, jitter, giveup,
-                     on_success_, on_backoff_, on_giveup_,
+                     on_success_, on_backoff_, on_giveup,
                      wait_gen_kwargs)
 
     # Return a function which decorates a target with a retry loop.
